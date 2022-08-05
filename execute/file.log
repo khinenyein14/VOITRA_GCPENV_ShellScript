@@ -1,0 +1,30 @@
+2022-08-05 09:29:07,188:DEBUG:urllib3.connectionpool:https://storage.googleapis.com:443 "GET /storage/v1/b/nandar?projection=noAcl&prettyPrint=false HTTP/1.1" 200 541
+2022-08-05 09:29:07,297:DEBUG:urllib3.connectionpool:https://storage.googleapis.com:443 "GET /storage/v1/b/nandar/o?projection=noAcl&prefix=GCPTest&prettyPrint=false HTTP/1.1" 200 712
+2022-08-05 09:29:07,423:DEBUG:root:new.wav audio file has been successfully converted to WAV format.
+2022-08-05 09:29:08,068:DEBUG:urllib3.connectionpool:https://storage.googleapis.com:443 "POST /upload/storage/v1/b/nandar/o?uploadType=multipart HTTP/1.1" 200 810
+2022-08-05 09:29:08,069:DEBUG:root:20220805_092907_297695.wav audio file has been uploaded to Bucket.
+2022-08-05 09:29:08,070:DEBUG:root:new.wav audio file has been deleted from audio folder.
+2022-08-05 09:29:08,071:DEBUG:google.auth._default:Checking ../../GCPTest/key.json for explicit credentials as part of auth process...
+2022-08-05 09:29:08,074:DEBUG:google.auth._default:Checking ../../GCPTest/key.json for explicit credentials as part of auth process...
+2022-08-05 09:29:08,075:DEBUG:urllib3.util.retry:Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2022-08-05 09:29:08,139:DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+2022-08-05 09:29:08,141:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2022-08-05 09:29:08,319:DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2022-08-05 09:29:08,322:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): storage.googleapis.com:443
+2022-08-05 09:29:08,644:DEBUG:urllib3.connectionpool:https://storage.googleapis.com:443 "GET /storage/v1/b/nandar/o?projection=noAcl&prefix=GCPTest%2F&delimiter=%2F&prettyPrint=false HTTP/1.1" 200 1453
+2022-08-05 09:29:08,646:DEBUG:root:==========================START============================
+2022-08-05 09:29:10,342:INFO:root:Waiting for operation to complete...20220805_092907_297695.wav
+2022-08-05 09:29:10,635:DEBUG:google.api_core.retry:Retrying due to , sleeping 1.7s ...
+2022-08-05 09:29:12,655:DEBUG:google.api_core.retry:Retrying due to , sleeping 1.5s ...
+2022-08-05 09:29:14,520:DEBUG:google.api_core.retry:Retrying due to , sleeping 6.4s ...
+2022-08-05 09:29:21,647:INFO:root:20220805_092907_297695.wav file is completed
+2022-08-05 09:29:21,648:DEBUG:root:PID : 5475
+2022-08-05 09:29:21,648:DEBUG:root:Time : 12.324761040999874seconds
+2022-08-05 09:29:21,649:DEBUG:root:File Size : 549.342 KB
+2022-08-05 09:29:21,714:INFO:root:Process Finished.
+2022-08-05 09:29:21,714:DEBUG:root:==========================END============================
+2022-08-05 09:29:21,715:DEBUG:root:20220805_092907_297695.wav audio file has been deleted from wav folder.
+2022-08-05 09:29:21,807:DEBUG:urllib3.connectionpool:https://storage.googleapis.com:443 "GET /storage/v1/b/nandar?projection=noAcl&prettyPrint=false HTTP/1.1" 200 541
+2022-08-05 09:29:21,910:DEBUG:urllib3.connectionpool:https://storage.googleapis.com:443 "GET /storage/v1/b/nandar/o?projection=noAcl&prefix=GCPTest&prettyPrint=false HTTP/1.1" 200 1453
+2022-08-05 09:29:22,358:DEBUG:urllib3.connectionpool:https://storage.googleapis.com:443 "DELETE /storage/v1/b/nandar/o/GCPTest%2F20220805_092907_297695.wav?generation=1659668347972410&prettyPrint=false HTTP/1.1" 204 0
+2022-08-05 09:29:22,359:DEBUG:root:Blob is deleted.
